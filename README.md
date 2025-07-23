@@ -1,6 +1,9 @@
 # Michis 🐱
 
 Aplicación móvil desarrollada con **Ionic + Angular**, que permite visualizar y explorar diferentes razas de gatos mediante la API pública [TheCatAPI](https://thecatapi.com/).
+Se realiza esta App con la finalidad de participar en un proceso de selección el Pragma.
+
+Puede descargar el .apk para facil revision
 
 ## 📱 Características principales
 
@@ -9,7 +12,7 @@ Aplicación móvil desarrollada con **Ionic + Angular**, que permite visualizar 
 - Búsqueda por nombre de raza.
 - Detalle completo de cada raza:
   - Imagen
-  - Descripción
+  - Descripción - tener en cuenta que se agrego un loren para demostrar el punto 3.1 del ejercicio que es el scroll en la descripción del gato
   - País de origen
   - Nivel de inteligencia
   - Adaptabilidad
@@ -29,7 +32,7 @@ Aplicación móvil desarrollada con **Ionic + Angular**, que permite visualizar 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/michis-app.git
+   git clone https://github.com/manupipe22/catbreedsApp-prueba.git
    cd michis-app
    ```
 
@@ -78,7 +81,7 @@ Crea un archivo en `src/environments/environment.ts` con la siguiente estructura
 ```ts
 export const environment = {
   production: false,
-  apiUrl: 'https://api.thecatapi.com/v1'
+  apiUrl: "https://api.thecatapi.com/v1",
 };
 ```
 
