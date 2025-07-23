@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Razas de Gatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-spinner *ngIf="loading" name="crescent" class="ion-margin"></ion-spinner>
+
+  <ion-text color="danger" *ngIf="error">
+    <p class="ion-padding">{{ error }}</p>
+  </ion-text>
+
+  <ion-list *ngIf="!loading && breeds.length">
+    <ion-card *ngFor="let breed of breeds" class="ion-margin" [routerLink]="['/breed-detail', breed.id]">
+      <ion-img [src]="breed.image?.url || 'https://via.placeholder.com/300x200?text=No+Image'"></ion-img>
+      <ion-card-header>
+        <ion-card-title>{{ breed.name }}</ion-card-title>
+        <ion-card-subtitle>{{ breed.origin }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ breed.temperament }}</p>
+        <small>{{ breed.description }}</small>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

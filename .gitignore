@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+.angular/
+
+# Ionic
+www/
+ios/
+android/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Capacitor
+capacitor.config.ts
+capacitor.config.json
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Android Studio
+.gradle/
+.idea/
+*.iml
+local.properties
+*.jks
+
+# Build output
+app/build/

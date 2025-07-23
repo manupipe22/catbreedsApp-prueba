@@ -1,0 +1,7 @@
+{
+  "name": "michisApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

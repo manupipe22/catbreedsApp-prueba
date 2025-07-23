@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/breeds"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ breed?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Imagen fuera del ion-content para que quede fija -->
+ <ion-content class="top-content">
+  <div class="fixed-image">
+    <img [src]="breed?.image?.url" alt="{{ breed?.name }}" />
+  </div>
+ </ion-content>
+
+<!-- Contenido con scroll -->
+<ion-content class="bottom-content">
+  <div class="info">
+    <ion-card>
+      <ion-card-content>
+        <p><strong>Descripción:</strong> {{ breed?.description }}</p>
+        <p><strong>País de origen:</strong> {{ breed?.origin }}</p>
+        <p><strong>Inteligencia:</strong> {{ breed?.intelligence }}</p>
+        <p><strong>Adaptabilidad:</strong> {{ breed?.adaptability }}</p>
+        <p><strong>Esperanza de vida:</strong> {{ breed?.life_span }} años</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, obcaecati? Quis, similique ab dolorum saepe ducimus necessitatibus alias exercitationem aperiam tenetur. Quidem sequi placeat porro error cumque tempore atque rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quod alias pariatur aut iure architecto porro odio eaque, voluptates vel enim, expedita beatae quis, ullam dolorum sequi aperiam deleniti accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus eveniet repellendus harum laborum itaque omnis doloremque accusamus dolore, architecto tenetur facilis, illo quod, dignissimos veniam possimus rerum consequuntur eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et aspernatur tempora tempore commodi animi unde assumenda velit perspiciatis delectus sapiente, placeat, odio excepturi sed deleniti laudantium. Amet accusantium ea in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima et assumenda velit asperiores ratione officia earum alias nam omnis quos facere aliquam, adipisci at minus? Culpa, a veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis esse et illum magnam sunt voluptatum in ratione dolores, ex, reiciendis voluptatibus minima nostrum at? Autem harum officia veritatis dolores doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi molestias a in accusamus quas iure. Sit voluptatibus non expedita asperiores, magnam nulla nesciunt tenetur facilis esse beatae quod repudiandae!</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
